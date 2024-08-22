@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterMove : MonoBehaviour
 {
     public int moveSpeed = 10;
-    public int RotationSpeed = 1000;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +20,6 @@ public class CharacterMove : MonoBehaviour
         Vector3 movementV = transform.forward * Input.GetAxis("Vertical");
         Vector3 movementH = transform.right * Input.GetAxis("Horizontal");
         transform.position += (movementV+ movementH) * moveSpeed * Time.deltaTime;
-        transform.Rotate(0, Input.GetAxis("Mouse X") * Time.deltaTime * RotationSpeed, 0);
+        
     }
 }
