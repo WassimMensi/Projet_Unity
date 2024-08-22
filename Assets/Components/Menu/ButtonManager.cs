@@ -9,6 +9,10 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+    public void CreditsScene()
+    {
+        SceneManager.LoadScene("Credits");
+    }
     public void GameScene()
     {
         SceneManager.LoadScene("Game");
